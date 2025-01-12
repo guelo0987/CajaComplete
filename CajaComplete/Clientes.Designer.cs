@@ -35,18 +35,20 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(67, 34);
+            label1.Font = new Font("Segoe UI Semibold", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Lime;
+            label1.Location = new Point(67, 69);
             label1.Name = "label1";
-            label1.Size = new Size(116, 20);
+            label1.Size = new Size(318, 46);
             label1.TabIndex = 0;
-            label1.Text = "Lista de Clientes";
+            label1.Text = "Listado de Clientes ";
             // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
             listBox1.Location = new Point(43, 168);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(511, 224);
+            listBox1.Size = new Size(546, 284);
             listBox1.TabIndex = 1;
             // 
             // Clientes

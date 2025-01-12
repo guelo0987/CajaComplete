@@ -44,6 +44,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 16F);
+            label1.ForeColor = Color.Lime;
             label1.Location = new Point(246, 42);
             label1.Name = "label1";
             label1.Size = new Size(282, 37);
@@ -63,7 +64,7 @@
             // 
             textBox1.Location = new Point(300, 135);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
+            textBox1.Size = new Size(259, 27);
             textBox1.TabIndex = 2;
             // 
             // label3
@@ -97,34 +98,33 @@
             // 
             textBox2.Location = new Point(300, 245);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(125, 27);
+            textBox2.Size = new Size(259, 27);
             textBox2.TabIndex = 6;
             // 
             // textBox3
             // 
             textBox3.Location = new Point(300, 191);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(125, 27);
+            textBox3.Size = new Size(259, 27);
             textBox3.TabIndex = 7;
             // 
             // textBox4
             // 
             textBox4.Location = new Point(300, 302);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(125, 27);
+            textBox4.Size = new Size(259, 27);
             textBox4.TabIndex = 8;
             // 
             // button1
             // 
-            button1.Location = new Point(288, 375);
+            button1.Font = new Font("Segoe UI", 14F);
+            button1.Location = new Point(332, 356);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(173, 72);
             button1.TabIndex = 9;
             button1.Text = "Agregar";
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
-            button1.Click += new System.EventHandler(this.button1_Click);
-
             // 
             // AddCliente
             // 

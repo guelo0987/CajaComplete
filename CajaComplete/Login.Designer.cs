@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
-
-
             label2 = new Label();
             username = new TextBox();
             password = new TextBox();
@@ -40,53 +37,58 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(370, 56);
+            label2.Font = new Font("Segoe UI", 32F);
+            label2.ForeColor = Color.Lime;
+            label2.Location = new Point(205, 36);
             label2.Name = "label2";
-            label2.Size = new Size(43, 20);
+            label2.Size = new Size(214, 72);
             label2.TabIndex = 0;
-            label2.Text = "login";
+            label2.Text = "VetCare";
             // 
             // username
             // 
-            username.Location = new Point(336, 116);
+            username.Location = new Point(249, 157);
             username.Name = "username";
+            username.PlaceholderText = "username";
             username.Size = new Size(125, 27);
             username.TabIndex = 1;
             // 
             // password
             // 
-            password.Location = new Point(336, 179);
+            password.Location = new Point(246, 221);
             password.Name = "password";
+            password.PlaceholderText = "password";
             password.Size = new Size(125, 27);
             password.TabIndex = 2;
-            
+            // 
             // btnlogin
-            btnlogin.Location = new Point(343, 242);
+            // 
+            btnlogin.Font = new Font("Segoe UI", 14F);
+            btnlogin.Location = new Point(249, 284);
             btnlogin.Name = "btnlogin";
-            btnlogin.Size = new Size(94, 29);
+            btnlogin.Size = new Size(110, 57);
             btnlogin.TabIndex = 3;
             btnlogin.Text = "Log in";
             btnlogin.UseVisualStyleBackColor = true;
-            btnlogin.Click += new EventHandler(BtnLogin_Click);
+            btnlogin.Click += BtnLogin_Click;
             // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = SystemColors.ButtonFace;
+            ClientSize = new Size(647, 422);
             Controls.Add(btnlogin);
             Controls.Add(password);
             Controls.Add(username);
             Controls.Add(label2);
             Name = "Login";
-            Text = "Form1";
+            Text = "Log In";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
         private Label label2;
         private TextBox username;
         private TextBox password;

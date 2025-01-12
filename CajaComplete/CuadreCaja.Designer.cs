@@ -49,17 +49,18 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16F);
-            label1.Location = new Point(238, 35);
+            label1.Font = new Font("Segoe UI", 24F);
+            label1.ForeColor = Color.Lime;
+            label1.Location = new Point(240, 26);
             label1.Name = "label1";
-            label1.Size = new Size(226, 37);
+            label1.Size = new Size(334, 54);
             label1.TabIndex = 0;
             label1.Text = "CUADRE DE CAJA";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(50, 108);
+            label2.Location = new Point(135, 134);
             label2.Name = "label2";
             label2.Size = new Size(96, 20);
             label2.TabIndex = 1;
@@ -68,7 +69,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(585, 49);
+            label3.Location = new Point(52, 39);
             label3.Name = "label3";
             label3.Size = new Size(50, 20);
             label3.TabIndex = 2;
@@ -77,7 +78,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(641, 49);
+            label4.Location = new Point(108, 39);
             label4.Name = "label4";
             label4.Size = new Size(50, 20);
             label4.TabIndex = 3;
@@ -86,7 +87,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(79, 143);
+            label5.Location = new Point(164, 169);
             label5.Name = "label5";
             label5.Size = new Size(50, 20);
             label5.TabIndex = 4;
@@ -95,7 +96,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(307, 108);
+            label6.Location = new Point(392, 134);
             label6.Name = "label6";
             label6.Size = new Size(57, 20);
             label6.TabIndex = 5;
@@ -104,7 +105,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(314, 143);
+            label7.Location = new Point(399, 169);
             label7.Name = "label7";
             label7.Size = new Size(50, 20);
             label7.TabIndex = 6;
@@ -113,7 +114,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(520, 108);
+            label8.Location = new Point(605, 134);
             label8.Name = "label8";
             label8.Size = new Size(63, 20);
             label8.TabIndex = 7;
@@ -122,7 +123,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(520, 143);
+            label9.Location = new Point(605, 169);
             label9.Name = "label9";
             label9.Size = new Size(50, 20);
             label9.TabIndex = 8;
@@ -131,7 +132,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(62, 250);
+            label10.Location = new Point(147, 276);
             label10.Name = "label10";
             label10.Size = new Size(58, 20);
             label10.TabIndex = 10;
@@ -140,7 +141,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(50, 215);
+            label11.Location = new Point(135, 241);
             label11.Name = "label11";
             label11.Size = new Size(60, 20);
             label11.TabIndex = 9;
@@ -149,7 +150,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(234, 250);
+            label12.Location = new Point(319, 276);
             label12.Name = "label12";
             label12.Size = new Size(58, 20);
             label12.TabIndex = 12;
@@ -158,7 +159,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(222, 215);
+            label13.Location = new Point(307, 241);
             label13.Name = "label13";
             label13.Size = new Size(50, 20);
             label13.TabIndex = 11;
@@ -167,7 +168,7 @@
             // label14
             // 
             label14.AutoSize = true;
-            label14.Location = new Point(448, 215);
+            label14.Location = new Point(533, 241);
             label14.Name = "label14";
             label14.Size = new Size(100, 20);
             label14.TabIndex = 13;
@@ -176,7 +177,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(464, 250);
+            label15.Location = new Point(549, 276);
             label15.Name = "label15";
             label15.Size = new Size(58, 20);
             label15.TabIndex = 14;
@@ -184,13 +185,13 @@
             // 
             // button1
             // 
-            button1.Location = new Point(234, 321);
+            button1.Location = new Point(314, 353);
             button1.Name = "button1";
             button1.Size = new Size(172, 73);
             button1.TabIndex = 15;
             button1.Text = "Cuadrar y Generar Reporte";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Click += button1_Click;
             // 
             // CuadreCaja
             // 

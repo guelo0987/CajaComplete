@@ -41,16 +41,17 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16F);
-            label1.Location = new Point(99, 33);
+            label1.Font = new Font("Segoe UI", 24F);
+            label1.ForeColor = Color.Lime;
+            label1.Location = new Point(12, 22);
             label1.Name = "label1";
-            label1.Size = new Size(118, 37);
+            label1.Size = new Size(155, 54);
             label1.TabIndex = 0;
-            label1.Text = "VetsCaja";
+            label1.Text = "VetCaja";
             // 
             // button1
             // 
-            button1.Location = new Point(99, 124);
+            button1.Location = new Point(28, 124);
             button1.Name = "button1";
             button1.Size = new Size(112, 71);
             button1.TabIndex = 1;
@@ -60,7 +61,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(99, 240);
+            button2.Location = new Point(28, 240);
             button2.Name = "button2";
             button2.Size = new Size(112, 66);
             button2.TabIndex = 2;
@@ -70,9 +71,9 @@
             // 
             // button3
             // 
-            button3.Location = new Point(99, 337);
+            button3.Location = new Point(28, 337);
             button3.Name = "button3";
-            button3.Size = new Size(94, 29);
+            button3.Size = new Size(112, 72);
             button3.TabIndex = 3;
             button3.Text = "Ver Clientes";
             button3.UseVisualStyleBackColor = true;
@@ -80,9 +81,9 @@
             // 
             // button4
             // 
-            button4.Location = new Point(99, 415);
+            button4.Location = new Point(28, 430);
             button4.Name = "button4";
-            button4.Size = new Size(118, 60);
+            button4.Size = new Size(118, 65);
             button4.TabIndex = 4;
             button4.Text = "Cuadre de Caja";
             button4.UseVisualStyleBackColor = true;
@@ -127,6 +128,7 @@
             Controls.Add(button1);
             Controls.Add(label1);
             Name = "Main";
+            Text = "Main";
             Load += Main_Load;
             ResumeLayout(false);
             PerformLayout();
