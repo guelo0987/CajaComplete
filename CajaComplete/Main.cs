@@ -38,7 +38,7 @@ namespace CajaComplete
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Factura formFactura = new Factura();
+            Factura formFactura = new Factura(userId,userName);
 
             formFactura.ShowDialog();
         }

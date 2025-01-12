@@ -8,9 +8,16 @@ namespace CajaComplete
 {
     public partial class Factura : Form
     {
-        public Factura()
+
+
+        private int userId; // ID del usuario que hizo login
+        private string userName; // Nombre del usuario que hizo login
+
+        public Factura(int loggedInUserId, string loggedInUserName)
         {
             InitializeComponent();
+            userId = loggedInUserId;
+            userName = loggedInUserName;
         }
 
         private void Factura_Load(object sender, EventArgs e)
@@ -116,7 +123,28 @@ namespace CajaComplete
 
                         billId = (int)command.ExecuteScalar();
                     }
+
+
+                    //insertar una transaccion 
+                    string insertTransaction = @"
+                INSERT INTO Cash_Transactions (user_id, branch_id, transaction_type, amount, notes, created_at)
+                VALUES (@user_id, @branch_id, 'IN', @amount, @notes, GETDATE());";
+
+
+                    using (SqlCommand command = new SqlCommand(insertTransaction,connection ))
+                    {
+                        command.Parameters.AddWithValue("@user_id", userId);
+                        command.Parameters.AddWithValue("@branch_id", 1); // Sucursal fija
+                        command.Parameters.AddWithValue("@amount", amountPaid);
+                        command.Parameters.AddWithValue("@notes", servicio.Text);
+
+                        command.ExecuteNonQuery();
+                    }
+
                 }
+
+
+
 
                 // Generar el PDF con los detalles de la factura
                 GenerarPDF(cliente.Text, servicio.Text, amountDue, amountPaid, billId);
